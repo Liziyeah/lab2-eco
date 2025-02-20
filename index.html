@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Posts</h1>
     <div>
-        <button id="fetch-button">Create Posts!</button>
+        <button popovertarget = "pop-up">Create Posts!</button>
+        <div popover id="pop-up">
+            <label for="post-url">Input Image URL</label>
+            <input id="post-url" type="url">
+            <br>
+            <label for="post-title">Input title</label>
+            <input id="post-title" type="text">
+            <br>
+            <label for="post-description">Input description</label>
+            <input id="post-description" type="text">
+            <button id="publish-post">Publish</button>
+        </div>
     </div>
     <div id="section-posts"></div>
     <script src="index.js"></script>
